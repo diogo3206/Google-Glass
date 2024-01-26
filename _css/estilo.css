@@ -1,0 +1,238 @@
+@font-face {
+    font-family: fontelogo;
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap');
+</style>
+}
+    
+body {
+    background-color: lightgray;
+    color: rgba(0, 0,0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #606060;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div#interface {
+ width: 900px;
+background-color: white;
+box-shadow:0px 0px 10px black;
+margin: -20px auto 10px auto;
+padding: 10px;
+}
+    
+    p {
+        text-align: justify;
+        text-indent: 50px;
+    }
+
+    header#cabecalho img#icone{
+        position: absolute;
+        left: 1020px;
+        top: 70px;
+    }
+
+    header#cabecalho{
+      border-bottom: 1px #606060 double;
+      height: 150px;
+      background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+    }
+
+    header#cabecalho h1 {
+        font-size: 30pt;
+        font-family: 'fontelogo' sans-serif;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0,.6);
+        color: #606060;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    header#cabecalho h2 {
+        font-size: 15px;
+        font-family: 'Gluten', cursive;
+        color: #888888;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    /* formatação de imagens com legendas*/
+    figure#foto-legenda {
+        position: relative;
+       border: 8px solid white;
+       box-shadow: 1px 1px 3px black;
+    }
+   
+    figure#foto-legenda img{
+        width: 100%;
+        height: 100%;
+    }
+    figure#foto-legenda figcaption{
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0,.4);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 1s;
+    }
+    figure#foto-legenda:hover figcaption {
+        opacity: 1;
+    }
+    /*Formatção do menu*/
+    nav#menu ul {
+     list-style: none;
+     text-transform: uppercase;
+     position: absolute;
+     top: -20px;
+     left: 500px;
+    }
+    nav#menu li{
+        display: inline-block;
+        background-color: lightgray;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+    }
+    nav#menu h1{
+    display: none;
+    }
+    nav#menu li:hover {
+    background-color: #606060;    
+    }
+    nav#menu a {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav#menu a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    section#corpo{
+        float: left;
+        width: 450px;
+        display: block;
+        border-right: solid gray;
+        padding-right: 20px;
+    }
+
+    article#noticia-principal h2{
+        font-size: 12pt;
+        color: #606060;
+        background-color: #dddddd;
+        padding: 5px 0px 5px 5px;
+        margin: 5px 10px 10px 0;
+
+
+    }
+
+    header#cabecalho-artigo h1{
+        font-family: 'fontlogo';
+        font-size: 20pt;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0,.1);
+        color: #606060;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }
+    header#cabecalho-artigo h2{
+        font-size: 12pt;
+        color: #cecece;
+        background-color: #ffffff;
+        margin: 0;
+    }
+
+    header#cabecalho-artigo h3{
+        font-size: 12px;
+            color: #606060;
+            
+    }
+    .direita{
+        text-align: right;
+    }
+
+    aside#lateral {
+        display: block;
+        width: 400px ; 
+        float: right;
+        background-color: lightgray;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0,.5);
+    }
+
+    aside#lateral h1{
+        font-family: 'fontelogo';
+        font-size: 20pt;
+        color: #606060;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    aside#lateral h2{
+        background-color: #888888;
+        color: #dddddd;
+        padding: 5px;
+        font-size:12pt;
+    }
+    /*rodape da pagina*/
+    footer#rodape {
+        clear: both;
+        border-top: 6px solid gray;
+    }
+    footer#rodape p {
+        text-align: center;
+    }
+    footer#rodape a {
+        text-decoration: none;
+        color: #606060;
+        font-style: italic;
+        
+    }
+    footer#rodape a:hover{
+        text-decoration: underline;
+    }
+    /*tabela*/
+    table#tabela {
+        border: 3px solid #606060;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 0px;
+    }
+    table#tabela td {
+        border: 1px solid #606060;  
+        padding: 10px;
+        text-align: center;
+
+    }
+    table#tabela td.ce{
+        color: white;
+        background-color: #606060;
+        vertical-align: text-top;
+        text-align: right;
+        font-weight: bold;
+    }
+    table#tabela td.cd{
+        background-color: #cecece;
+    }
+    table#tabela caption{
+        font-weight: bolder;
+        font-size: 13pt;
+        color: #888888;
+    }
+    table#tabela caption span{
+        display: block;
+        float: right;
+        color: black;
+        font-size: 11px;
+        margin-top: 10px;
+    }
